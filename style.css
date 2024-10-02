@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff, #fb5607, #ffbe0b);
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    width: 300px;
+    margin: 0 auto;
+    color: white;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #ff006e, 0 0 20px #8338ec, 0 0 30px #3a86ff;
+}
+
+#palabra {
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px #ff006e, 0 0 20px #8338ec, 0 0 30px #3a86ff;
+}
+
+#alfabeto button {
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff, #fb5607, #ffbe0b);
+    background-size: 400% 400%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    animation: gradientBG 3s ease infinite;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+    transition: transform 0.2s;
+}
+
+#alfabeto button:hover {
+    transform: scale(1.1);
+}
+
+#alfabeto button:disabled {
+    background-color: #333;
+    cursor: not-allowed;
+    color: #777;
+}
+
+#mensaje {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #ffbe0b;
+    text-shadow: 0 0 10px #ffbe0b, 0 0 20px #ff006e, 0 0 30px #8338ec;
+}
+
+#intentos {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #3a86ff;
+    text-shadow: 0 0 10px #3a86ff;
+}
+
+#letras-adivinadas {
+    margin-top: 10px;
+    color: #fb5607;
+    text-shadow: 0 0 10px #fb5607;
+}
